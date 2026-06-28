@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Quiz App</title>
+     <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "container">
+        <h1> Flashcard Quiz APP </h1>
+
+    <!-- Flashcard Section -->
+     <div class = "flashcard">
+     <h2 id = "question"> 
+        Question will appear here
+     </h2>
+     <p id = "answer" class = "hidden">
+        Answer will appear here
+     </p>
+
+     <button id = "show-answer-btn">
+         Show Answer 
+        </button>
+     </div>
+
+             <!-- Navigation Buttons -->
+        <div class = "navigation-buttons">
+            <button id = "prev-btn">
+                Previous
+            </button>
+            <button id = "next-btn">
+                Next
+            </button>
+        </div>
+
+      <!-- Edit & Delete Buttons -->
+        <div class = "action-buttons">
+
+            <button id = "edit-btn">
+                Edit Flashcard
+            </button>
+            <button id = "delete-btn">
+                Delete Flashcard
+            </button>
+        </div>
+
+      <!-- Add New Flashcard Section -->
+       <div class = "add-flashcard">
+
+        <h2> Add New Flashcard</h2>
+
+        <input 
+        type = "text"
+         id = "new-question"
+         placeholder = "Enter Question" >
+
+         <textarea
+         id = "new-answer"
+         placeholder = "Enter Answer">
+        </textarea>
+        <button id = "add-btn">
+            Add Flashcard
+        </button>
+       </div>
+    </div>
+
+        <!-- JavaScript File -->
+    <script src = "script.js"> 
+    </script>
+</body>
+</html>
